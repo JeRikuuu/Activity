@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Disappear{
+            visibility: hidden;
+            position: relative;
+            margin-left: 30%;
+        }
+
+        .appear{
+            visibility: visible;
+        }
+
+        .Disappear img{
+            width: 40rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myH1">Do something</h1>
+    <button onclick="firstButton()" id="btn1">Click This</button>
+    <div id="appear" class="Disappear">
+        <h1 id="myH2">Again, almost there</h1>
+        <button onclick="secondButton()" id="btn2">Click Again</button>
+    </div>
+    <div id="appear2" class="Disappear">
+        <h1 id="myH3">Don't give up on me now!</h1>
+        <input type="button" value="HIT IT" onclick="play()">
+        <audio id="audio" src="/image and audio/I Like You So Much, Youll Know It - Ysabelle Cuevas (Lyrics).mp3"></audio>
+    </div>
+    <div id="appear3" class="Disappear">
+        <p>Refresh the page to stop</p>
+        <img src="/image and audio/lab u.jpg" id="img" alt="labu">
+        <!-- <audio id="audio" src="/I Like You So Much, Youll Know It - Ysabelle Cuevas (Lyrics).mp3"></audio> -->
+    </div>
+</body>
+<script>
+    let myH1 = document.getElementById("myH1");
+    let btn1 = document.getElementById("btn1");
+    let audio = document.getElementById("audio");
+    function firstButton(){
+        appear.classList.toggle("appear");
+    }
+    function secondButton(){
+        appear2.classList.toggle("appear");
+    }
+    function play(){
+        appear3.classList.toggle("appear")
+        var audio=document.getElementById("audio");
+        var player = document.getElementById("audio")
+        audio.play();
+    }
+</script>
+</html>
